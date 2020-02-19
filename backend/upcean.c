@@ -696,7 +696,7 @@ INTERNAL void ean_leading_zeroes(struct zint_symbol *symbol, unsigned char sourc
 /* splits string to parts before and after '+' parts */
 INTERNAL int eanx(struct zint_symbol *symbol, unsigned char source[], int src_len) {
     unsigned char first_part[20] = {0}, second_part[20] = {0}, dest[1000] = {0};
-    unsigned char local_source[20] = {0};
+    unsigned char local_source[27] = {0};
     unsigned int latch, reader, writer, with_addon;
     int error_number, i, plus_count;
 
